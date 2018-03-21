@@ -4,7 +4,7 @@ import { EventEmitter } from '@angular/core';
 export class ShoppingListService {
   ingredientsChanged = new EventEmitter<Ingredient[]>();
 
-  ingredients: Ingredient[] = [
+  private ingredients: Ingredient[] = [
     new Ingredient('Apples', 5),
     new Ingredient('Tomatoes', 10)
   ];
@@ -16,5 +16,15 @@ export class ShoppingListService {
   addIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
     this.ingredientsChanged.emit(this.ingredients.slice());
+  }
+
+  addIngredients(ingredients: Ingredient[]) {
+    // for (let ingredient of ingredients) {
+    //   this.addIngredient(ingredient);
+    // }  THIS WORKS BUT THERE IS A SHORTER WAY OF DOING IT WITH ES6
+
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+    // the spread operator (...) will take that ingredients array and convert it into a list
   }
 }
