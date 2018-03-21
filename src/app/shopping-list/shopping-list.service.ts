@@ -32,4 +32,9 @@ export class ShoppingListService {
     this.ingredientsChanged.next(this.ingredients.slice());
     // the spread operator (...) will take that ingredients array and convert it into a list
   }
+
+  updateIngredient(index: number, newIngredient: Ingredient) {
+    this.ingredients[index] = newIngredient;
+    this.ingredientsChanged.next(this.ingredients.slice());
+  }
 }
