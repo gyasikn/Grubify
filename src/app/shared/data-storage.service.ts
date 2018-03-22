@@ -36,7 +36,7 @@ export class DataStorageService {
         (recipes: Recipe[]) => {
           this.recipeService.setRecipes(recipes);
         }
-      )
+      );
   }
 
 }
