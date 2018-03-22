@@ -22,8 +22,8 @@ export class RecipeService {
       ]
     ),
     new Recipe(
-      "Much Recipe wow",
-      "finger licking good...",
+      "Teriyaki Salmon Bok Choy",
+      "Salmon dish with an Asian twist.",
       "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/11/teriyaki-salmon.jpg?itok=QUgpSYUv",
       [
         new Ingredient("Salmon Fillets", 2),
