@@ -33,6 +33,44 @@ export class RecipeService {
         new Ingredient("Honey (tbsp)", 1),
         new Ingredient("Sesame Oil (tsp)", 1)
       ]
+    ),
+    new Recipe(
+      "Ceviche",
+      "Traditional Peruvian Dish",
+      "https://i1.wp.com/2driftingcoconuts.com/wp-content/uploads/2016/03/img_8286.jpg?fit=2400%2C1603",
+      [
+        new Ingredient("Tilapia Fillets", 5),
+        new Ingredient("Red Onion", 1),
+        new Ingredient("Sweet Corn", 1),
+        new Ingredient("Limes", 10),
+        new Ingredient("Sweet Potato", 1),
+        new Ingredient("Cilantro", 1)
+      ]
+    ),
+    new Recipe(
+      "Arroz Con Pollo - Platter",
+      "Traditional Spanish Cuisine",
+      "https://fthmb.tqn.com/aSSXyxmIr7OGdBgWz8JvK1YG09o=/960x0/filters:no_upscale()/arroz-con-pollo-87997430-5691313e5f9b58eba48f3371.jpg",
+      [
+        new Ingredient("Chicken Breasts", 6),
+        new Ingredient("Green Peas - One Bag", 1),
+        new Ingredient("Yellow Rice (Cups)", 5),
+        new Ingredient("Yellow Onion", 1),
+        new Ingredient("Carrot", 2)
+      ]
+    ),
+    new Recipe(
+      "Empanadas - Chilean",
+      "Traditional Chilean Style Empanadas",
+      "https://mdixonp.files.wordpress.com/2016/05/empanada-chilena-ok-730x427.jpg",
+      [
+        new Ingredient("Ground Beef (lb)", 1),
+        new Ingredient("Boiled Eggs", 4),
+        new Ingredient("Onion", 1),
+        new Ingredient("Black Olives (can)", 1),
+        new Ingredient("Dough", 1),
+        new Ingredient("Raisins (box)", 1)
+      ]
     )
   ];
 

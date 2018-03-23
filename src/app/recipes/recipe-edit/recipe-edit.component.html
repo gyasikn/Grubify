@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name"><span class="label-backgrounds">Name</span></label>
             <input type="text" id="name" formControlName="name" class="form-control">
           </div>
         </div>
@@ -19,20 +19,22 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group">
-            <label for="imagePath">Image URL</label>
+            <label for="imagePath"><span class="label-backgrounds">Image URL</span></label>
             <input type="text" id="imagePath" formControlName="imagePath" class="form-control" #imagePath>
           </div>
         </div>
       </div>
+      <hr>
       <div class="row">
         <div class="col-xs-12">
           <img [src]="imagePath.value" class="img-responsive">
         </div>
       </div>
+      <hr>
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description"><span class="label-backgrounds">Description</span></label>
             <textarea type="text" id="description" class="form-control" formControlName="description" rows="6"></textarea>
           </div>
         </div>
@@ -56,6 +58,7 @@
               <button type="button" class="btn btn-success" (click)="onAddIngredient()"> Add Ingredient</button>
             </div>
           </div>
+          <hr>
         </div>
       </div>
     </form>

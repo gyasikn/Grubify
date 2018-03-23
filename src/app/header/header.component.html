@@ -1,23 +1,21 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a routerLink="/" class="navbar-brand">Grubify</a>
-      <!-- <img routerLink="/" src="assets/grubify.png" alt="grubify" class="img-responsive grubify-logo" style="cursor: pointer;"> -->
+      <!-- <a routerLink="/" class="navbar-brand">Grubify</a> -->
+      <img routerLink="/" src="assets/grubify.png" alt="grubify" class="img-responsive grubify-logo" style="cursor: pointer;">
     </div>
 
     <div class="navbar-default">
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated()">Recipes</a></li>
-        <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated()">Shopping List</a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
         <ng-template [ngIf]="!isAuthenticated()">
-          <li><a routerLink="/signup">Sign Up</a></li>
-          <li><a routerLink="/login">Log In</a></li>
+          <li><a routerLink="/signup"><span class="nav-links">Sign Up</span></a></li>
+          <li><a routerLink="/login"><span class="nav-links">Log In</span></a></li>
         </ng-template>
-        <li><a style="cursor: pointer;" (click)="onLogout()" *ngIf="isAuthenticated()">Logout</a></li>
+        <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated()"><span class="nav-links">Recipes</span></a></li>
+        <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated()"><span class="nav-links">Shopping List</span></a></li>
+        <li><a style="cursor: pointer;" (click)="onLogout()" *ngIf="isAuthenticated()"><span class="nav-links">Logout</span></a></li>
         <li class="dropdown" appDropdown *ngIf="isAuthenticated()">
-          <a style="cursor: pointer" class="dropdown-toggle" role="button">Manage Recipes<span class="caret"></span></a>
+          <a style="cursor: pointer" class="dropdown-toggle" role="button"><span class="nav-links">Manage Recipes</span><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a style="cursor: pointer" (click)="onSaveData()">Save Data</a></li>
             <li><a style="cursor: pointer" (click)="onFetchData()">Display Data</a></li>

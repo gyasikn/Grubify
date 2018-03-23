@@ -2,3 +2,9 @@ input.ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
   border: 1px solid red;
 }
+
+.label-backgrounds {
+  background-color: rgb(253, 220, 167);
+  padding: 5px;
+  border-radius: 5px;
+}
