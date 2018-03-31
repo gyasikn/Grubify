@@ -3,11 +3,14 @@
     <app-shopping-edit></app-shopping-edit>
     <hr>
     <ul class="list-group">
-      <a class="list-group-item" style="cursor: pointer" *ngFor="let ingredient of ingredients; let i =index"
-      (click)="onEditItem(i)">
-        {{ ingredient.name }} ({{ ingredient.amount }})
+      <a class="list-group-item" 
+         style="cursor: pointer" 
+         *ngFor="let ingredient of ingredients; let i =index"
+         (click)="onEditItem(i)">
+         {{ ingredient.name }} ({{ ingredient.amount }})
       </a>
     </ul>
     <hr>
+    <a routerLink="/recipes"><button type="button" class="btn btn-primary">Back To Recipes</button></a>
   </div>
 </div>
