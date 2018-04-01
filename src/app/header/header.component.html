@@ -14,13 +14,6 @@
         <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated()"><span class="nav-links">Recipes</span></a></li>
         <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated()"><span class="nav-links">Shopping List</span></a></li>
         <li><a style="cursor: pointer;" (click)="onLogout()" *ngIf="isAuthenticated()"><span class="nav-links">Logout</span></a></li>
-        <li class="dropdown" appDropdown *ngIf="isAuthenticated()">
-          <a style="cursor: pointer" class="dropdown-toggle" role="button"><span class="nav-links">Manage Recipes</span><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a style="cursor: pointer" (click)="onSaveData()">Save Data</a></li>
-            <li><a style="cursor: pointer" (click)="onFetchData()">Display Data</a></li>
-          </ul>
-        </li>
       </ul>
     </div>
   </div>
