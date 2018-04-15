@@ -3,10 +3,12 @@
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
       <div class="row">
         <div class="col-sm-5 form-group">
+          <hr>
           <label for="name"><span class="shopping-labels">Name</span></label>
           <input type="text" id="name" class="form-control" name="name" ngModel required>
         </div>
         <div class="col-sm-2 form-group">
+          <hr>
           <label for="amount"><span class="shopping-labels">Amount</span></label>
           <input type="number" id="amount" class="form-control" name="amount" ngModel required pattern="^[1-9]+[0-9]*$">
         </div>

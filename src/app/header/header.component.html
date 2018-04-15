@@ -8,8 +8,8 @@
     <div class="navbar-default">
       <ul class="nav navbar-nav navbar-right">
         <ng-template [ngIf]="!isAuthenticated()">
-          <li><a routerLink="/signup"><span class="nav-links">Sign Up</span></a></li>
-          <li><a routerLink="/login"><span class="nav-links">Log In</span></a></li>
+          <li routerLinkActive="active"><a routerLink="/signup"><span class="nav-links">Sign Up</span></a></li>
+          <li routerLinkActive="active"><a routerLink="/login"><span class="nav-links">Log In</span></a></li>
         </ng-template>
         <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated()"><span class="nav-links">Recipes</span></a></li>
         <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated()"><span class="nav-links">Shopping List</span></a></li>

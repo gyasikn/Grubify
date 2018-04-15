@@ -1,5 +1,6 @@
 .signup-div {
   background-color: rgb(253, 220, 167);
+  border: 2px solid peru;
   border-radius: 5px;
   padding: 30px;
   margin: 5px;
@@ -20,14 +21,23 @@
   margin-top: 15px;
 }
 
-.copyright {
-  margin-top: 5px;
+.get-started {
+  margin: auto;
+  background-color: peru;
+  color: rgb(253, 220, 167);
+  text-align: center;
+  width: fit-content;
+  padding: 15px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 25pt;
 }
 
 #hearticon {
   color: red;
 }
 
-#linkedin, #github {
+#linkedin, #github, #mail, #rebel {
   color: #232323;
+  margin-left: 10px;
 }

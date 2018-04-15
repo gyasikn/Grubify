@@ -1,7 +1,16 @@
 .img-deets {
+  background-color: peru;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: peru;
+}
+
+.img-deets-text {
   background-color: rgb(253, 220, 167);
   padding: 5px;
   border-radius: 5px;
+  text-align: center;
+  border: 2px solid peru;
 }
 
 .shopping-button {

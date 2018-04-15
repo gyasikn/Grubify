@@ -7,4 +7,5 @@ textarea.ng-invalid.ng-touched {
   background-color: rgb(253, 220, 167);
   padding: 5px;
   border-radius: 5px;
+  border: 2px solid peru;
 }

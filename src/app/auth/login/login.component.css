@@ -1,5 +1,6 @@
 .login-div {
   background-color: rgb(253, 220, 167);
+  border: 2px solid peru;
   border-radius: 5px;
   padding: 30px;
   margin: 5px;
@@ -16,18 +17,27 @@
    text-align: center;
 }
 
-.row {
-  margin-top: 15px;
+.start-cooking {
+  margin: auto;
+  background-color: peru;
+  color: rgb(253, 220, 167);
+  text-align: center;
+  width: fit-content;
+  padding: 15px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 25pt;
 }
 
-.copyright {
-  margin-top: 5px;
+#footer-row {
+  margin-top: 15px;
 }
 
 #hearticon {
   color: red;
 }
 
-#linkedin, #github {
+#linkedin, #github, #mail, #rebel {
   color: #232323;
+  margin-left: 10px;
 }
