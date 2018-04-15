@@ -3,6 +3,31 @@
   border-radius: 5px;
   padding: 30px;
   margin: 5px;
-  text-align: center; 
-  font-size: 15pt;
+}
+
+.footer {
+   height: 60px;
+   background-color: peru;
+   color: #232323;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.copyright {
+  margin-top: 5px;
+}
+
+#hearticon {
+  color: red;
+}
+
+#linkedin, #github {
+  color: #232323;
 }
